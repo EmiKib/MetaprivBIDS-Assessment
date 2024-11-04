@@ -1,4 +1,4 @@
-The Dallas Lifespan Brain Study_
+The Dallas Lifespan Brain Study
 ___________________________________________
 
 Placement of study: (cyril)
