@@ -25,7 +25,7 @@ Row level correlation:
 | AOMIC ds003097          | 0.74                              | 0.76                               | 0.61                         |
 | DALLAS ds004856         | 0.57                              | 0.33                               | 0.40                         |
 | EGG ds004515            | 0.52                              | 0.68                               | 0.56                         |
-| MIDNIGHT ds000224       | na                                | na                                 | na                           |
+| MIDNIGHT ds000224       | 0.74                              | 0.69                               | 0.63                         |
 | NIMH ds004215           | na                                | na                                 | na                           |
 | 6                       | na                                | na                                 | na                           |
 | 7                       | na                                | na                                 | na                           |
