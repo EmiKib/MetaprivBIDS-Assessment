@@ -21,7 +21,7 @@ link: https://openneuro.org/datasets/ds000224/versions/1.0.4
 
 <table>
   <tr>
-    <th style="min-width: 150px;">Dataset</th>
+    <th style="min-width: 250px;">Dataset</th>
     <th>Pearson Correlation (SUDA vs PIF)</th>
     <th>Spearman Correlation (SUDA vs PIF)</th>
     <th>Kendall's Tau (SUDA vs PIF)</th>
