@@ -19,7 +19,7 @@ link: https://openneuro.org/datasets/ds004215/versions/2.0.1
 link: https://openneuro.org/datasets/ds000224/versions/1.0.4
 
 | Dataset                 | Pearson Correlation (SUDA vs PIF) | Spearman Correlation (SUDA vs PIF) | Kendall's Tau (SUDA vs PIF) |
-|-------------------------|-----------------------------------|------------------------------------|------------------------------|
+|-------------------------|-----------------------------------|------------------------------------|-----------------------------|
 | AOMIC-ds003097          | 0.85                             | 0.82                               | 0.78                         |
 | DALLAS-ds004856         | 0.73                             | 0.71                               | 0.68                         |
 | EGG-ds004515            | 0.89                             | 0.88                               | 0.83                         |
