@@ -1,0 +1,11 @@
+Column,Unique Rows After Removal,Difference in Unique Rows,Normalized Difference
+AgeMRI_W1,443,10,0.1
+Race,453,0,0.0
+EduYrsEstCap,453,0,0.0
+EduComp,453,0,0.0
+Sex,453,0,0.0
+Ethnicity,453,0,0.0
+Height_W1,453,0,0.0
+Weight_W1,453,0,0.0
+BMI_W1,453,0,0.0
+HandednessScore,456,-3,-0.1
