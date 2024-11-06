@@ -1,4 +1,19 @@
-*.pchce
-.DS_Store
-metaprivBIDS.egg-info/
+# Ignore Python cache files
 __pycache__/
+*.py[cod]
+*.pyo
+
+# Ignore environment files
+env/
+.venv/
+venv/
+ENV/
+env.bak/
+*.env
+
+# Ignore Jupyter Notebook checkpoints
+.ipynb_checkpoints/
+
+# Ignore OS-specific files
+.DS_Store
+Thumbs.db
