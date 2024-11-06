@@ -1,9 +1,7 @@
 The Dallas Lifespan Brain Study
 ___________________________________________
 
-Placement of study: (cyril)
-
-Sensitive Attribute: (Race)
+Placement of study:
 
 File of interest: participant.tsv participant.json 
 
