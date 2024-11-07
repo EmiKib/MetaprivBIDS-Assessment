@@ -21,7 +21,7 @@ link: https://openneuro.org/datasets/ds000224/versions/1.0.4
 6. Early stressful experiences are associated with reduced neural responses to naturalistic emotional and social content in children ds004228<br>
 link: https://openneuro.org/datasets/ds004228/versions/1.0.1/file-display/phenotype:questionnaires.json
 
-7. Multivariate Assessment of Inhibitory Control in Youth: Links with Psychopathology and Brain Function Dataset ds004935
+7. Multivariate Assessment of Inhibitory Control in Youth: Links with Psychopathology and Brain Function Dataset ds004935<br>
 link: https://openneuro.org/datasets/ds004935/versions/1.0.2
 
 ### Row level correlation:
