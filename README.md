@@ -22,7 +22,7 @@ link: https://openneuro.org/datasets/ds000224/versions/1.0.4
 link: https://openneuro.org/datasets/ds004228/versions/1.0.1/file-display/phenotype:questionnaires.json
 
 7. Multivariate Assessment of Inhibitory Control in Youth: Links with Psychopathology and Brain Function Dataset ds004935
-link: https://openneuro.org/datasets/ds004935/versions/1.0.2/file-display/participants.json
+link: https://openneuro.org/datasets/ds004935/versions/1.0.2
 
 ### Row level correlation:
 
