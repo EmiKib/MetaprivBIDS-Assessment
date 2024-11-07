@@ -38,4 +38,14 @@ link: https://openneuro.org/datasets/ds004935/versions/1.0.2
 | 8                       | na                                | na                                 | na                           |
 | 9                       | na                                | na                                 | na                           |
 | 10                      | na                                | na                                 | na                           |
-  
+
+
+### Field level correlation:
+
+
+
+
+
+
+
+###  Sum of combined risk for all combination of fields at a minimum of 3 variables, correlation:
