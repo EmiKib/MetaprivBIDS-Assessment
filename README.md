@@ -33,9 +33,19 @@ link: https://openneuro.org/datasets/ds004935/versions/1.0.2
 | EGG ds004515            | 0.52                              | 0.68                               | 0.56                         |
 | MIDNIGHT ds000224       | 0.74                              | 0.69                               | 0.63                         |
 | NIMH ds004215           | 0.50                              | 0.83                               | 0.63                         |
-| STRESSFUL ds004228      | na                                | na                                 | na                           |
+| STRESSFUL ds004228      | 0.47                              | 0.82                               | 0.63                         |
 | MULTIVARIATE ds004935   | na                                | na                                 | na                           |
 | 8                       | na                                | na                                 | na                           |
 | 9                       | na                                | na                                 | na                           |
 | 10                      | na                                | na                                 | na                           |
-  
+
+
+### Field level correlation:
+
+
+
+
+
+
+
+###  Sum of combined risk for all combination of fields at a minimum of 3 variables, correlation:
