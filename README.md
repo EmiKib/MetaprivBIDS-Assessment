@@ -84,4 +84,16 @@ link: https://openneuro.org/datasets/ds004935/versions/1.0.2
 |                               | SUDA & K             | 0.55              |
 
 
+#### Dataset: EARLY STRESSFUL (Field Level)
+
+| Correlation Type              | Variables             | Correlation Value |
+|-------------------------------|-----------------------|--------------------|
+| **Pearson Correlation**       | SUDA & PIF           | 0.63              |
+|                               | K-combined & PIF     | 0.11              |
+|                               | SUDA & K-combined    | 0.50              |
+| **Spearman Rank Correlation** | PIF & SUDA           | 0.32              |
+|                               | PIF & K              | 0.00              |
+|                               | SUDA & K             | 0.09              |
+
+
 ###  Sum of combined risk for all combination of fields at a minimum of 3 variables, correlation:
