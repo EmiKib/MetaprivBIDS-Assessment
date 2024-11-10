@@ -72,5 +72,16 @@ link: https://openneuro.org/datasets/ds004935/versions/1.0.2
 
 
 
+#### Dataset: DALLAS (Field Level)
+
+| Correlation Type              | Variables             | Correlation Value |
+|-------------------------------|-----------------------|--------------------|
+| **Pearson Correlation**       | SUDA & PIF           | 0.91              |
+|                               | K-combined & PIF     | 0.36              |
+|                               | SUDA & K-combined    | 0.71              |
+| **Spearman Rank Correlation** | PIF & SUDA           | 0.81              |
+|                               | PIF & K              | 0.22              |
+|                               | SUDA & K             | 0.55              |
+
 
 ###  Sum of combined risk for all combination of fields at a minimum of 3 variables, correlation:
