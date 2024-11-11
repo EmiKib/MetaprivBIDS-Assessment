@@ -96,4 +96,14 @@ link: https://openneuro.org/datasets/ds004935/versions/1.0.2
 |                               | SUDA & K             | 0.09              |
 
 
+| Correlation Type          | Variables       | Correlation Value |
+|---------------------------|-----------------|-------------------|
+| **Pearson Correlation**      | SUDA & PIF      | 0.74              |
+|        | K-combined & PIF| 0.73              |
+|        | SUDA & K-combined| 0.32             |
+| **Spearman Rank Correlation** | PIF & SUDA      | 0.77              |
+|  | PIF & K         | 0.17              |
+| | SUDA & K        | 0.51              |
+
+
 ###  Sum of combined risk for all combination of fields at a minimum of 3 variables, correlation:
