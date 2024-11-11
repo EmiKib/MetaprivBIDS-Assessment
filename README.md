@@ -127,3 +127,15 @@ SUDA & K-combined: 0.31<br>
 
 
 ###  Sum of combined risk for all combination of fields at a minimum of 3 variables, correlation:
+
+#### DALLAS
+
+| Correlation Type            | Variables                 | Correlation Value       |
+|-----------------------------|---------------------------|-------------------------|
+| Spearman Correlation        | Suda sum & K-combined     | 0.73                    |
+| Pearson Correlation         | Suda sum & K-combined     | 0.5633109674666663      |
+| Spearman Correlation        | PIF 95% & K-combined      | 0.80                    |
+| Pearson Correlation         | PIF 95% & K-combined      | 0.7733340549170992      |
+| Spearman Correlation        | PIF 95% & SUDA            | 0.84                    |
+| Pearson Correlation         | PIF 95% & SUDA            | 0.8214976280667218      |
+
