@@ -1,0 +1,43 @@
+Combination,Unique Rows,Unique Rows Excluding Columns,Score
+"age, highest_education, ethnicity",177,13,0.9096045197740112
+"age, highest_education, income",174,11,0.9367816091954023
+"age, highest_education, race",177,9,0.9322033898305084
+"age, highest_education, sex",177,15,0.8983050847457628
+"age, ethnicity, income",174,17,0.9022988505747126
+"age, ethnicity, race",218,16,0.7247706422018348
+"age, ethnicity, sex",216,27,0.6805555555555556
+"age, income, race",174,12,0.9310344827586207
+"age, income, sex",174,19,0.8908045977011494
+"age, race, sex",218,20,0.7064220183486238
+"highest_education, ethnicity, income",20,218,-2.2
+"highest_education, ethnicity, race",19,174,0.0
+"highest_education, ethnicity, sex",12,174,0.0
+"highest_education, income, race",27,216,-1.5555555555555556
+"highest_education, income, sex",16,218,-2.75
+"highest_education, race, sex",17,174,0.0
+"ethnicity, income, race",15,177,-0.2
+"ethnicity, income, sex",9,177,-0.3333333333333333
+"ethnicity, race, sex",11,174,0.0
+"income, race, sex",13,177,-0.23076923076923078
+"age, highest_education, ethnicity, income",174,1,0.9942528735632183
+"age, highest_education, ethnicity, race",177,2,0.9717514124293786
+"age, highest_education, ethnicity, sex",177,8,0.9378531073446328
+"age, highest_education, income, race",174,0,1.0
+"age, highest_education, income, sex",174,1,0.9942528735632183
+"age, highest_education, race, sex",177,6,0.9491525423728814
+"age, ethnicity, income, race",174,5,0.9712643678160919
+"age, ethnicity, income, sex",174,10,0.9425287356321839
+"age, ethnicity, race, sex",218,14,0.7339449541284404
+"age, income, race, sex",174,7,0.9597701149425287
+"highest_education, ethnicity, income, race",32,216,-1.3125
+"highest_education, ethnicity, income, sex",28,218,-1.5714285714285714
+"highest_education, ethnicity, race, sex",34,174,0.0
+"highest_education, income, race, sex",40,216,-1.05
+"ethnicity, income, race, sex",29,177,-0.10344827586206896
+"age, highest_education, ethnicity, income, race",174,0,1.0
+"age, highest_education, ethnicity, income, sex",174,1,0.9942528735632183
+"age, highest_education, ethnicity, race, sex",177,1,0.9774011299435028
+"age, highest_education, income, race, sex",174,0,1.0
+"age, ethnicity, income, race, sex",174,3,0.9827586206896551
+"highest_education, ethnicity, income, race, sex",51,214,-0.7843137254901961
+"age, highest_education, ethnicity, income, race, sex",174,0,1.0
