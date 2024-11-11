@@ -133,9 +133,9 @@ SUDA & K-combined: 0.31<br>
 | Correlation Type            | Variables                 | Correlation Value       |
 |-----------------------------|---------------------------|-------------------------|
 | Spearman Correlation        | Suda sum & K-combined     | 0.73                    |
-| Pearson Correlation         | Suda sum & K-combined     | 0.5633109674666663      |
+| Pearson Correlation         | Suda sum & K-combined     | 0.56      |
 | Spearman Correlation        | PIF 95% & K-combined      | 0.80                    |
-| Pearson Correlation         | PIF 95% & K-combined      | 0.7733340549170992      |
+| Pearson Correlation         | PIF 95% & K-combined      | 0.77      |
 | Spearman Correlation        | PIF 95% & SUDA            | 0.84                    |
-| Pearson Correlation         | PIF 95% & SUDA            | 0.8214976280667218      |
+| Pearson Correlation         | PIF 95% & SUDA            | 0.82      |
 
