@@ -126,9 +126,9 @@ SUDA & K-combined: 0.31<br>
 
 
 
-###  Sum of combined risk for all combination of fields at a minimum of 3 variables, correlation:
+###  Sum of combined risk for all combination of fields at a minimum of 3 variables:
 
-#### DALLAS
+#### DALLAS Correlation
 
 | Correlation Type            | Variables                 | Correlation Value       |
 |-----------------------------|---------------------------|-------------------------|
@@ -141,6 +141,6 @@ SUDA & K-combined: 0.31<br>
 
 
 
-#### NIIMH
+#### NIIMH Correlation
 
 
