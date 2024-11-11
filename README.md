@@ -40,6 +40,13 @@ link: https://openneuro.org/datasets/ds004935/versions/1.0.2
 | 10                      | na                                | na                                 | na                           |
 
 
+
+The average correlation values across the datasets are:
+
+- Average Pearson Correlation: 0.62
+- Average Spearman Correlation: 0.70
+- Average Kendall's Tau: 0.58 ​​
+
 ### Field level correlation:
 
 
