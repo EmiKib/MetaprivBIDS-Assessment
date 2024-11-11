@@ -34,7 +34,7 @@ link: https://openneuro.org/datasets/ds004935/versions/1.0.2
 | MIDNIGHT ds000224       | 0.74                              | 0.69                               | 0.63                         |
 | NIMH ds004215           | 0.50                              | 0.83                               | 0.63                         |
 | STRESSFUL ds004228      | 0.47                              | 0.82                               | 0.63                         |
-| MULTIVARIATE ds004935   | na                                | na                                 | na                           |
+| MULTIVARIATE ds004935   | 0.82                                | 0.80                                 | 0.67                           |
 | 8                       | na                                | na                                 | na                           |
 | 9                       | na                                | na                                 | na                           |
 | 10                      | na                                | na                                 | na                           |
