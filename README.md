@@ -114,4 +114,16 @@ The average correlation values across the datasets are:
 | | SUDA & K        | 0.51              |
 
 
+**Spearman Rank Correlation AVG:**
+SUDA & PIF: 0.71
+PIF & K-combined: 0.19
+SUDA & K: 0.29
+
+**Pearson Correlation AVG:**
+SUDA & PIF: 0.77
+K-combined & PIF: 0.39
+SUDA & K-combined: 0.31
+
+
+
 ###  Sum of combined risk for all combination of fields at a minimum of 3 variables, correlation:
