@@ -140,6 +140,18 @@ SUDA & K-combined: 0.31<br>
 | Pearson Correlation         | PIF 95% & SUDA            | 0.82      |
 
 
+#### AOMIC Correlation
+
+| Correlation Type            | Variables                 | Correlation Value       |
+|-----------------------------|---------------------------|-------------------------|
+| Spearman Correlation        | Suda sum & K-combined     | -0.57                   |
+| Pearson Correlation         | Suda sum & K-combined     | -0.16                   |
+| Spearman Correlation        | PIF 95% & K-combined      | -0.59                   |
+| Pearson Correlation         | PIF 95% & K-combined      | -0.25                   |
+| Spearman Correlation        | PIF 95% & SUDA            | 0.91                    |
+| Pearson Correlation         | PIF 95% & SUDA            | 0.83                    |
+
+
 
 #### NIIMH Correlation
 
