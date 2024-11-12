@@ -152,6 +152,39 @@ SUDA & K-combined: 0.31<br>
 | Pearson Correlation         | PIF 95% & SUDA            | 0.83                    |
 
 
+#### EARLY STRESSFUL correlation
+
+
+| Correlation Type            | Variables                 | Correlation Value       |
+|-----------------------------|---------------------------|-------------------------|
+| Spearman Correlation        | Suda sum & K-combined     | 0.19                    |
+| Pearson Correlation         | Suda sum & K-combined     | 0.10                    |
+| Spearman Correlation        | PIF 95% & K-combined      | 0.49                    |
+| Pearson Correlation         | PIF 95% & K-combined      | 0.38                    |
+| Spearman Correlation        | PIF 95% & SUDA            | 0.71                    |
+| Pearson Correlation         | PIF 95% & SUDA            | 0.74                    |
+
+
+#### MULTI correlation
+
+| Correlation Type            | Variables                 | Correlation Value       |
+|-----------------------------|---------------------------|-------------------------|
+| Spearman Correlation        | Suda sum & K-combined     | 0.66                    |
+| Pearson Correlation         | Suda sum & K-combined     | 0.33                    |
+| Spearman Correlation        | PIF 95% & K-combined      | 0.87                    |
+| Pearson Correlation         | PIF 95% & K-combined      | 0.70                    |
+| Spearman Correlation        | PIF 95% & SUDA            | 0.75                    |
+| Pearson Correlation         | PIF 95% & SUDA            | 0.68                    |
+
+
+#### NIMH correlation
+
+
+
+
+
+
+
 
 #### NIIMH Correlation
 
