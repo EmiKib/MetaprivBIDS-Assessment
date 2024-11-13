@@ -41,7 +41,7 @@ link: https://openneuro.org/datasets/ds002080/versions/4.0.0
 | BTC*                       | 0.0                                | 0.0                                 | 0.0                           |
 
 
-* 0 correlation as SUDA set all rows to equal score. 
+*  #BTC: 0 correlation as SUDA set all rows to equal score. 
 
 The average correlation values across the datasets are:
 
