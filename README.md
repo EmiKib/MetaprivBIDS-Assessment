@@ -131,12 +131,12 @@ The average correlation values across the datasets are:
 
 
 
-#### **Pearson Correlation**<br>
+#### **Pearson Correlation (AVG)**<br>
 SUDA & PIF: 0.81<br>
 K-combined & PIF: 0.35<br>
 SUDA & K-combined: 0.27<br>
 
-#### **Spearman Rank Correlation**<br>
+#### **Spearman Rank Correlation(AVG)**<br>
 PIF & SUDA: 0.74<br>
 PIF & K: 0.25<br>
 SUDA & K: 0.34<br>
