@@ -207,7 +207,16 @@ SUDA & K: 0.34<br>
 
 
 
+#### BTC correlatioon
 
+| Correlation Type            | Variables                 | Correlation Value       |
+|-----------------------------|---------------------------|-------------------------|
+| Spearman Correlation        | Suda sum & K-combined     | 0.75                    |
+| Pearson Correlation         | Suda sum & K-combined     | 0.72       |
+| Spearman Correlation        | PIF 95% & K-combined      | 0.86                    |
+| Pearson Correlation         | PIF 95% & K-combined      | 0.90      |
+| Spearman Correlation        | PIF 95% & SUDA            | 0.81                    |
+| Pearson Correlation         | PIF 95% & SUDA            | 0.79      |
 
 
 
