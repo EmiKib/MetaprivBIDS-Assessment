@@ -116,6 +116,21 @@ The average correlation values across the datasets are:
 | | SUDA & K        | 0.51              |
 
 
+
+#### Dataset: BTC (Field Level)
+
+
+| Correlation Type            | Variables             | Correlation Value |
+|-----------------------------|-----------------------|-------------------|
+| **Pearson Correlation**         | SUDA & PIF            | 0.99              |
+|          | K-combined & PIF      | 0.12              |
+|          | SUDA & K-combined     | 0.11              |
+| **Spearman Rank Correlation**   | PIF & SUDA            | 0.89              |
+|    | PIF & K               | 0.58              |
+|    | SUDA & K              | 0.58              |
+
+
+
 **Spearman Rank Correlation AVG:**<br>
 SUDA & PIF: 0.71<br>
 PIF & K-combined: 0.19<br>
