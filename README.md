@@ -24,6 +24,9 @@ link: https://openneuro.org/datasets/ds004228/versions/1.0.1/file-display/phenot
 7. Multivariate Assessment of Inhibitory Control in Youth: Links with Psychopathology and Brain Function Dataset ds004935<br>
 link: https://openneuro.org/datasets/ds004935/versions/1.0.2
 
+8. BTC_postop<br>
+link: https://openneuro.org/datasets/ds002080/versions/4.0.0
+
 ### Row level correlation:
 
 | Dataset                 | Pearson Correlation (SUDA vs PIF) | Spearman Correlation (SUDA vs PIF) | Kendall's Tau (SUDA vs PIF)  |
@@ -35,9 +38,8 @@ link: https://openneuro.org/datasets/ds004935/versions/1.0.2
 | NIMH ds004215           | 0.50                              | 0.83                               | 0.63                         |
 | STRESSFUL ds004228      | 0.47                              | 0.82                               | 0.63                         |
 | MULTIVARIATE ds004935   | 0.82                                | 0.80                                 | 0.67                           |
-| 8                       | na                                | na                                 | na                           |
-| 9                       | na                                | na                                 | na                           |
-| 10                      | na                                | na                                 | na                           |
+| BTC                       | na                                | na                                 | na                           |
+
 
 
 
@@ -140,7 +142,58 @@ SUDA & K-combined: 0.31<br>
 | Pearson Correlation         | PIF 95% & SUDA            | 0.82      |
 
 
+#### AOMIC Correlation
 
-#### NIIMH Correlation
+| Correlation Type            | Variables                 | Correlation Value       |
+|-----------------------------|---------------------------|-------------------------|
+| Spearman Correlation        | Suda sum & K-combined     | -0.57                   |
+| Pearson Correlation         | Suda sum & K-combined     | -0.16                   |
+| Spearman Correlation        | PIF 95% & K-combined      | -0.59                   |
+| Pearson Correlation         | PIF 95% & K-combined      | -0.25                   |
+| Spearman Correlation        | PIF 95% & SUDA            | 0.91                    |
+| Pearson Correlation         | PIF 95% & SUDA            | 0.83                    |
+
+
+#### EARLY STRESSFUL correlation
+
+
+| Correlation Type            | Variables                 | Correlation Value       |
+|-----------------------------|---------------------------|-------------------------|
+| Spearman Correlation        | Suda sum & K-combined     | 0.19                    |
+| Pearson Correlation         | Suda sum & K-combined     | 0.10                    |
+| Spearman Correlation        | PIF 95% & K-combined      | 0.49                    |
+| Pearson Correlation         | PIF 95% & K-combined      | 0.38                    |
+| Spearman Correlation        | PIF 95% & SUDA            | 0.71                    |
+| Pearson Correlation         | PIF 95% & SUDA            | 0.74                    |
+
+
+#### MULTI correlation
+
+| Correlation Type            | Variables                 | Correlation Value       |
+|-----------------------------|---------------------------|-------------------------|
+| Spearman Correlation        | Suda sum & K-combined     | 0.66                    |
+| Pearson Correlation         | Suda sum & K-combined     | 0.33                    |
+| Spearman Correlation        | PIF 95% & K-combined      | 0.87                    |
+| Pearson Correlation         | PIF 95% & K-combined      | 0.70                    |
+| Spearman Correlation        | PIF 95% & SUDA            | 0.75                    |
+| Pearson Correlation         | PIF 95% & SUDA            | 0.68                    |
+
+
+#### NIMH correlation
+
+| Correlation Type            | Variables                 | Correlation Value               |
+|-----------------------------|---------------------------|---------------------------------|
+| Spearman Correlation        | Suda sum & K-combined     | -0.80                           |
+| Pearson Correlation         | Suda sum & K-combined     | -0.42            |
+| Spearman Correlation        | PIF 95% & K-combined      | -0.67                           |
+| Pearson Correlation         | PIF 95% & K-combined      | -0.34            |
+| Spearman Correlation        | PIF 95% & SUDA            | 0.88                            |
+| Pearson Correlation         | PIF 95% & SUDA            | 0.92       |
+
+
+
+
+
+
 
 
