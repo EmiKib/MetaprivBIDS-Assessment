@@ -38,10 +38,10 @@ link: https://openneuro.org/datasets/ds002080/versions/4.0.0
 | NIMH ds004215           | 0.50                              | 0.83                               | 0.63                         |
 | STRESSFUL ds004228      | 0.47                              | 0.82                               | 0.63                         |
 | MULTIVARIATE ds004935   | 0.82                                | 0.80                                 | 0.67                           |
-| BTC                       | na                                | na                                 | na                           |
+| BTC*                       | 0.0                                | 0.0                                 | 0.0                           |
 
 
-
+*  #BTC: 0 correlation as SUDA set all rows to equal score. 
 
 The average correlation values across the datasets are:
 
@@ -116,15 +116,30 @@ The average correlation values across the datasets are:
 | | SUDA & K        | 0.51              |
 
 
-**Spearman Rank Correlation AVG:**<br>
-SUDA & PIF: 0.71<br>
-PIF & K-combined: 0.19<br>
-SUDA & K: 0.29<br>
 
-**Pearson Correlation AVG:**<br>
-SUDA & PIF: 0.77<br>
-K-combined & PIF: 0.39<br>
-SUDA & K-combined: 0.31<br>
+#### Dataset: BTC (Field Level)
+
+
+| Correlation Type            | Variables             | Correlation Value |
+|-----------------------------|-----------------------|-------------------|
+| **Pearson Correlation**         | SUDA & PIF            | 0.99              |
+|          | K-combined & PIF      | 0.12              |
+|          | SUDA & K-combined     | 0.11              |
+| **Spearman Rank Correlation**   | PIF & SUDA            | 0.89              |
+|    | PIF & K               | 0.58              |
+|    | SUDA & K              | 0.58              |
+
+
+
+#### **Pearson Correlation (AVG)**<br>
+SUDA & PIF: 0.81<br>
+K-combined & PIF: 0.35<br>
+SUDA & K-combined: 0.27<br>
+
+#### **Spearman Rank Correlation(AVG)**<br>
+PIF & SUDA: 0.74<br>
+PIF & K: 0.25<br>
+SUDA & K: 0.34<br>
 
 
 
@@ -192,7 +207,16 @@ SUDA & K-combined: 0.31<br>
 
 
 
+#### BTC correlatioon
 
+| Correlation Type            | Variables                 | Correlation Value       |
+|-----------------------------|---------------------------|-------------------------|
+| Spearman Correlation        | Suda sum & K-combined     | 0.75                    |
+| Pearson Correlation         | Suda sum & K-combined     | 0.72       |
+| Spearman Correlation        | PIF 95% & K-combined      | 0.86                    |
+| Pearson Correlation         | PIF 95% & K-combined      | 0.90      |
+| Spearman Correlation        | PIF 95% & SUDA            | 0.81                    |
+| Pearson Correlation         | PIF 95% & SUDA            | 0.79      |
 
 
 
