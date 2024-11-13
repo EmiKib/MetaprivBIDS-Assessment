@@ -38,10 +38,10 @@ link: https://openneuro.org/datasets/ds002080/versions/4.0.0
 | NIMH ds004215           | 0.50                              | 0.83                               | 0.63                         |
 | STRESSFUL ds004228      | 0.47                              | 0.82                               | 0.63                         |
 | MULTIVARIATE ds004935   | 0.82                                | 0.80                                 | 0.67                           |
-| BTC                       | na                                | na                                 | na                           |
+| BTC*                       | 0.0                                | 0.0                                 | 0.0                           |
 
 
-
+* 0 correlation as SUDA set all rows to equal score. 
 
 The average correlation values across the datasets are:
 
