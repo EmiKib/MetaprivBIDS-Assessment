@@ -1,0 +1,10 @@
+Column,Unique Rows After Removal,Difference in Unique Rows,Normalized Difference
+background_SES,301,161,17.9
+education_level,416,46,15.3
+age,202,260,9.6
+handedness,454,8,4.0
+gender_identity_M,445,17,2.4
+gender_identity_F,455,7,1.0
+sexual_attraction_M,460,2,0.3
+sexual_attraction_F,460,2,0.3
+sex,462,0,0.0

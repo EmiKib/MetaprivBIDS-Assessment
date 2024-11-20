@@ -246,9 +246,7 @@ def rst_outlier_case2(data, column, k=2.2414):
     madn = mad / 0.6745
     class_outliers = ((np.abs(column_data_array - median) / madn) > k).astype(int)
     outlier_indices = data[class_outliers == 1].index.tolist()
-    print(outlier_indices)
     return class_outliers, madn, mad, outlier_indices
-
 
 
 def plot_boxplot_with_outliers(data, class_outliers, median, madn, k=2.2414):
@@ -269,5 +267,4 @@ def plot_boxplot_with_outliers(data, class_outliers, median, madn, k=2.2414):
     ax.set_xlabel('Value')
     ax.legend()
     plt.show()
-
 
