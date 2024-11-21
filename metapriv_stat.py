@@ -244,9 +244,18 @@ def rst_outlier_case2(data, column, k=2.2414):
     median = np.nanmedian(column_data_array)
     mad = np.nanmedian(np.abs(column_data_array - median))
     madn = mad / 0.6745
-    class_outliers = ((np.abs(column_data_array - median) / madn) > k).astype(int)
+
+    z_scores = (column_data_array - median) / madn
+    class_outliers = (np.abs(z_scores) > k).astype(int)
     outlier_indices = data[class_outliers == 1].index.tolist()
-    return class_outliers, madn, mad, outlier_indices
+
+    above_outliers = (z_scores > k).astype(int)
+    above_outlier_indices = data[above_outliers == 1].index.tolist()
+
+    
+
+    return class_outliers, madn, mad, outlier_indices, above_outlier_indices
+
 
 
 def plot_boxplot_with_outliers(data, class_outliers, median, madn, k=2.2414):
@@ -267,4 +276,5 @@ def plot_boxplot_with_outliers(data, class_outliers, median, madn, k=2.2414):
     ax.set_xlabel('Value')
     ax.legend()
     plt.show()
+
 
