@@ -33,8 +33,8 @@ def stats(suda, pif, suda_att, k_combined_field):
     
     
     # Spearman Rank Correlation
-    correlation_spearman, _ = spearmanr(suda['dis-score'], pif['RIG'])
-    print(f"Spearman Rank Correlation between suda & pif: {correlation_spearman:.2f}")  
+    correlation_spearman, p_value = spearmanr(suda['dis-score'], pif['RIG'])
+    print(f"Spearman Rank Correlation between suda & pif: {correlation_spearman:.2f}, P-value: {p_value:.4f}")
     
     # Kendall's Tau Correlation
     tau, p_value = kendalltau(suda['dis-score'], pif['RIG'])
@@ -98,16 +98,16 @@ def stats(suda, pif, suda_att, k_combined_field):
     
     
     # Spearman correlation between PIF & SUDA
-    correlation_spearman_pif_suda, _ = spearmanr(merged_field_values['contribution'], merged_field_values['sum'])
-    print(f"Spearman Rank Correlation between PIF & SUDA: {correlation_spearman_pif_suda:.2f}")
+    correlation_spearman_pif_suda, p_value = spearmanr(merged_field_values['contribution'], merged_field_values['sum'])
+    print(f"Spearman Rank Correlation between PIF & SUDA: {correlation_spearman_pif_suda:.2f}, P-value: {p_value:.4f}")
 
     # Spearman correlation between PIF & K
-    correlation_spearman_pif_k, _ = spearmanr(merged_field_values['Normalized Difference'], merged_field_values['sum'])
-    print(f"Spearman Rank Correlation between PIF & K: {correlation_spearman_pif_k:.2f}")
+    correlation_spearman_pif_k, p_value = spearmanr(merged_field_values['Normalized Difference'], merged_field_values['sum'])
+    print(f"Spearman Rank Correlation between PIF & K: {correlation_spearman_pif_k:.2f}, P-value: {p_value:.4f}")
 
     # Spearman correlation between SUDA & K
-    correlation_spearman_suda_k, _ = spearmanr(merged_field_values['contribution'], merged_field_values['Normalized Difference'])
-    print(f"Spearman Rank Correlation between SUDA & K: {correlation_spearman_suda_k:.2f}")
+    correlation_spearman_suda_k, p_value = spearmanr(merged_field_values['contribution'], merged_field_values['Normalized Difference'])
+    print(f"Spearman Rank Correlation between SUDA & K: {correlation_spearman_suda_k:.2f}, P-value: {p_value:.4f}")
 
     return 
 

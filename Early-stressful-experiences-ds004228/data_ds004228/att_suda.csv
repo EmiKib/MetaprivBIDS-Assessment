@@ -1,8 +1,8 @@
 ,variable,contribution
-0,male,16.92
-1,Race,29.37
-2,parent2_edu,29.77
+0,income_rank,41.1
+1,income_median,23.0
+2,age_scan,48.77
 3,parent1_edu,28.18
-4,age_scan,48.77
-5,income_median,38.44
-6,income_rank,25.66
+4,parent2_edu,29.77
+5,Race,29.37
+6,male,16.92
