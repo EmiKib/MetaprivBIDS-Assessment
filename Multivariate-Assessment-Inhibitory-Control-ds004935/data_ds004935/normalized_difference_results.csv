@@ -1,7 +1,7 @@
 Column,Unique Rows After Removal,Difference in Unique Rows,Normalized Difference
-age,51,123,0.6
-highest_education,174,0,0.0
-ethnicity,174,0,0.0
-race,174,0,0.0
-sex,174,0,0.0
-income,177,-3,-0.4
+age,60,160,0.7
+highest_education,220,0,0.0
+income,220,0,0.0
+race,220,0,0.0
+ethnicity,220,0,0.0
+sex,220,0,0.0
