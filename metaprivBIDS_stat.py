@@ -1,6 +1,6 @@
 import pandas as pd 
 import matplotlib.pyplot as plt
-from scipy.stats import spearmanr, kendalltau, linregress
+from scipy.stats import spearmanr, kendalltau, linregress, rankdata
 from rpy2 import robjects
 from rpy2.robjects.packages import importr
 from rpy2.robjects import pandas2ri
@@ -172,69 +172,62 @@ def calculate_summed_dis_scores(k_combined_all, AOMIC, sample_fraction=0.3, miss
 
 
 
+
+
 def plot_calc(k_combined_all): 
-    
-   
     k_combined_all = k_combined_all.replace([np.inf, -np.inf], 0)
 
-    correlation, _ = spearmanr(k_combined_all['Score'], k_combined_all['suda_score'])
-    print(f"Spearman Correlation between Suda sum and K-combined: {correlation:.2f}")
-    
+    # SUDA vs. K-Combined
+    spearman_corr, _ = spearmanr(k_combined_all['Score'], k_combined_all['suda_score'])
     pearson_corr = k_combined_all['Score'].corr(k_combined_all['suda_score'])
-    print('Pearson correlation to Suda sum & K-combined',pearson_corr)
-    
-    print('________________________________________________________________________')
-    
-    print('Pearson Correlation:', pearson_corr)
-
+    print(f"Spearman Correlation between Suda sum and K-combined: {spearman_corr:.2f}")
+    print(f"Pearson Correlation between Suda sum and K-combined: {pearson_corr:.2f}")
     
     plt.figure(figsize=(8, 4))
-    plt.scatter(k_combined_all['Score'], k_combined_all['suda_score'], alpha=0.6)
-    plt.title(f'Scatter Plot of k-combined Score vs. SUDA Score\n(Pearson Correlation: {pearson_corr:.2f})')
-    plt.xlabel('K-combined Score')
-    plt.ylabel('SUDA Score')
+    plt.scatter(rankdata(k_combined_all['Score']), rankdata(k_combined_all['suda_score']), alpha=0.6)
+    plt.title(f'Scatter Plot of Ranked k-combined Score vs. SUDA Score\n(Spearman Correlation: {spearman_corr:.2f})')
+    plt.xlabel('Ranked K-combined Score')
+    plt.ylabel('Ranked SUDA Score')
     plt.grid(False)
-
-    
     plt.show()
     
     print('________________________________________________________________________')
     print('\n')
     
-    correlation, _ = spearmanr(k_combined_all['Score'], k_combined_all['pif_score'])
-    print(f"Spearman Correlation between PIF 95% and K-combined: {correlation:.2f}")
-    
+    # PIF vs. K-Combined
+    spearman_corr, _ = spearmanr(k_combined_all['Score'], k_combined_all['pif_score'])
     pearson_corr = k_combined_all['Score'].corr(k_combined_all['pif_score'])
-    print('Pearson correlation to PIF 95% & K-combined',pearson_corr)
+    print(f"Spearman Correlation between PIF 95% and K-combined: {spearman_corr:.2f}")
+    print(f"Pearson Correlation between PIF 95% and K-combined: {pearson_corr:.2f}")
     
     plt.figure(figsize=(8, 4))
-    plt.scatter(k_combined_all['Score'], k_combined_all['pif_score'], alpha=0.6)
-    plt.title(f'Scatter Plot of k-combined Score vs. Pif score\n(Pearson Correlation: {pearson_corr:.2f})')
-    plt.xlabel('K-combined Score')
-    plt.ylabel('Pif score')
+    plt.scatter(rankdata(k_combined_all['Score']), rankdata(k_combined_all['pif_score']), alpha=0.6)
+    plt.title(f'Scatter Plot of Ranked k-combined Score vs. PIF Score\n(Spearman Correlation: {spearman_corr:.2f})')
+    plt.xlabel('Ranked K-combined Score')
+    plt.ylabel('Ranked PIF Score')
     plt.grid(False)
-
-    
     plt.show()
     
     print('________________________________________________________________________')
     print('\n')
     
-    correlation, _ = spearmanr(k_combined_all['suda_score'], k_combined_all['pif_score'])
-    print(f"Spearman Correlation between PIF 95% and SUDA: {correlation:.2f}")
-    
+    # PIF vs. SUDA
+    spearman_corr, _ = spearmanr(k_combined_all['suda_score'], k_combined_all['pif_score'])
     pearson_corr = k_combined_all['suda_score'].corr(k_combined_all['pif_score'])
-    print('Pearson correlation to PIF 95% & SUDA',pearson_corr)
+    print(f"Spearman Correlation between PIF 95% and SUDA: {spearman_corr:.2f}")
+    print(f"Pearson Correlation between PIF 95% and SUDA: {pearson_corr:.2f}")
     
     plt.figure(figsize=(8, 4))
-    plt.scatter(k_combined_all['suda_score'], k_combined_all['pif_score'], alpha=0.6)
-    plt.title(f'Scatter Plot of suda Score vs. Pif score\n(Pearson Correlation: {pearson_corr:.2f})')
-    plt.xlabel('suda Score')
-    plt.ylabel('Pif score')
+    plt.scatter(rankdata(k_combined_all['suda_score']), rankdata(k_combined_all['pif_score']), alpha=0.6)
+    plt.title(f'Scatter Plot of Ranked SUDA Score vs. PIF Score\n(Spearman Correlation: {spearman_corr:.2f})')
+    plt.xlabel('Ranked SUDA Score')
+    plt.ylabel('Ranked PIF Score')
     plt.grid(False)
-        
-        
-    return 
+    plt.show()
+    
+    return
+
+
 
 
 
