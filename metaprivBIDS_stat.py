@@ -10,7 +10,6 @@ from piflib import compute_cigs
 import warnings
 
 
-
 # Suppress SettingWithCopyWarning
 warnings.simplefilter(action='ignore', category=pd.core.common.SettingWithCopyWarning)
 
@@ -25,12 +24,9 @@ sdcMicro = importr('sdcMicro')
 
 
 def stats(suda, pif, suda_att, k_combined_field):
-    
-    
     print('\n' + '='*40)
     print('        ROW LEVEL CORRELATION      ')
     print('='*40 + '\n')
-    
     
     # Spearman Rank Correlation
     correlation_spearman, p_value = spearmanr(suda['dis-score'], pif['RIG'])
@@ -42,39 +38,32 @@ def stats(suda, pif, suda_att, k_combined_field):
     
     # Pearson Correlation
     correlation_pearson = suda['dis-score'].corr(pif['RIG'])
+    print(f"Pearson Correlation between suda & pif: {correlation_pearson:.2f}")
     
-    #field relationship
-    
+    # Field relationship
     sum_df = pif.drop(columns=['RIG']).sum()
     sum_df = pd.DataFrame(list(sum_df.items()), columns=['variable', 'sum'])
-    
     
     # Merge the two DataFrames on 'variable'
     merged_field_values = pd.merge(suda_att, sum_df, on='variable')
     merged_field_values = pd.merge(merged_field_values, k_combined_field, on='variable') 
-    
 
-
-    # Calculate the correlation between 'contribution' and 'Sum'
+    # Calculate Pearson correlations
     correlation_pif_suda = merged_field_values['contribution'].corr(merged_field_values['sum'])
     correlation_pif_k = merged_field_values['Normalized Difference'].corr(merged_field_values['sum'])
     correlation_suda_k = merged_field_values['contribution'].corr(merged_field_values['Normalized Difference'])
-
     
-    
-    
-    
-    # Plot with trend line
+    # Plot Spearman Rank Correlation with Trend Line
     fig, ax = plt.subplots(figsize=(8, 4))
-    ax.scatter(suda['dis-score'], pif['RIG'], alpha=0.3, label='Data Points')
+    ax.scatter(rankdata(suda['dis-score']), rankdata(pif['RIG']), alpha=0.3, label='Ranked Data Points')
     
-    # Fit and plot the trend line
-    slope, intercept, _, _, _ = linregress(suda['dis-score'], pif['RIG'])
-    ax.plot(suda['dis-score'], slope * suda['dis-score'] + intercept, color='red', label='Trend Line')
+    # Fit and plot the trend line for ranked data
+    slope, intercept, _, _, _ = linregress(rankdata(suda['dis-score']), rankdata(pif['RIG']))
+    ax.plot(rankdata(suda['dis-score']), slope * rankdata(suda['dis-score']) + intercept, color='red', label='Trend Line')
     
-    ax.set_title(f'Pearson Correlation: {correlation_pearson:.2f}')
-    ax.set_xlabel('suda["dis-score"]')
-    ax.set_ylabel('pif["RIG"]')
+    ax.set_title(f'Spearman Correlation: {correlation_spearman:.2f}')
+    ax.set_xlabel('Ranked SUDA (dis-score)')
+    ax.set_ylabel('Ranked PIF (RIG)')
     ax.grid(False)
     ax.legend()
     
@@ -86,30 +75,24 @@ def stats(suda, pif, suda_att, k_combined_field):
     print('      FIELD LEVEL CORRELATIONS     ')
     print('='*40 + '\n')
     
-    result_text_field_s_p = f"Pearson Correlation between SUDA & PIF field level: {correlation_pif_suda:.2f}"
-    result_text_field_p_k = f"Pearson Correlation between K-combined & PIF field level: {correlation_pif_k:.2f}"
-    result_text_field_s_k = f"Pearson Correlation between SUDA & K-combined field level: {correlation_suda_k:.2f}"
-
-    print(result_text_field_s_p)
-    print(result_text_field_p_k)
-    print(result_text_field_s_k)
-    
+    # Print Pearson correlations for field-level analysis
+    print(f"Pearson Correlation between SUDA & PIF field level: {correlation_pif_suda:.2f}")
+    print(f"Pearson Correlation between K-combined & PIF field level: {correlation_pif_k:.2f}")
+    print(f"Pearson Correlation between SUDA & K-combined field level: {correlation_suda_k:.2f}")
     print('\n')
     
-    
-    # Spearman correlation between PIF & SUDA
+    # Spearman correlations for field-level analysis
     correlation_spearman_pif_suda, p_value = spearmanr(merged_field_values['contribution'], merged_field_values['sum'])
     print(f"Spearman Rank Correlation between PIF & SUDA: {correlation_spearman_pif_suda:.2f}, P-value: {p_value:.4f}")
 
-    # Spearman correlation between PIF & K
     correlation_spearman_pif_k, p_value = spearmanr(merged_field_values['Normalized Difference'], merged_field_values['sum'])
     print(f"Spearman Rank Correlation between PIF & K: {correlation_spearman_pif_k:.2f}, P-value: {p_value:.4f}")
 
-    # Spearman correlation between SUDA & K
     correlation_spearman_suda_k, p_value = spearmanr(merged_field_values['contribution'], merged_field_values['Normalized Difference'])
     print(f"Spearman Rank Correlation between SUDA & K: {correlation_spearman_suda_k:.2f}, P-value: {p_value:.4f}")
 
-    return 
+    return
+
 
 
 
