@@ -214,6 +214,8 @@ def plot_calc(k_combined_all):
 
 
 
+
+
 def rst_outlier_case2(data, column, k=2.2414):
     column_data = data[column]
     column_data_array = np.array(column_data)
@@ -221,36 +223,53 @@ def rst_outlier_case2(data, column, k=2.2414):
     mad = np.nanmedian(np.abs(column_data_array - median))
     madn = mad / 0.6745
 
+    # Calculate z-scores
     z_scores = (column_data_array - median) / madn
+
+    # Identify outliers
     class_outliers = (np.abs(z_scores) > k).astype(int)
     outlier_indices = data[class_outliers == 1].index.tolist()
-
     above_outliers = (z_scores > k).astype(int)
     above_outlier_indices = data[above_outliers == 1].index.tolist()
+    outlier_tuples = [(z_scores[idx], idx) for idx in outlier_indices]
 
+    # Create the box plot
+    plt.figure(figsize=(8, 5))
+    boxplot = plt.boxplot(
+        z_scores,
+        vert=False,
+        patch_artist=True,
+        boxprops=dict(facecolor='lightblue', color='blue'),
+        medianprops=dict(color='orange'),
+        flierprops=dict(marker='o', color='red', alpha=0.6)
+    )
     
-
-    return class_outliers, madn, mad, outlier_indices, above_outlier_indices
-
-
-
-def plot_boxplot_with_outliers(data, class_outliers, median, madn, k=2.2414):
-    data = np.array(data)
-    lower_whisker = median - k * madn
-    upper_whisker = median + k * madn
-    fig, ax = plt.subplots()
-    ax.bxp([{
-        'med': median,
-        'q1': np.percentile(data, 25),
-        'q3': np.percentile(data, 75),
-        'whislo': lower_whisker,
-        'whishi': upper_whisker
-    }], vert=False, showfliers=False, patch_artist=True, boxprops=dict(facecolor='lightblue'))
-    outliers = data[class_outliers == 1]
-    ax.scatter(outliers, [1] * len(outliers), color='red', zorder=3, label='Outliers')
-    ax.set_title('Boxplot with MAD-based Whiskers and Outliers')
-    ax.set_xlabel('Value')
-    ax.legend()
+    # Adjust whiskers manually to limit them to -k and +k
+    for line in boxplot['whiskers']:
+        xdata = line.get_xdata()
+        capped_xdata = np.clip(xdata, -k, k)  # Cap whisker ends to -k and +k
+        line.set_xdata(capped_xdata)
+    
+    for cap in boxplot['caps']:
+        xdata = cap.get_xdata()
+        capped_xdata = np.clip(xdata, -k, k)  # Cap caps to -k and +k
+        cap.set_xdata(capped_xdata)
+    
+    # Add threshold lines for -k and +k
+    plt.axvline(x=-k, color='red', linestyle='--', label=f'Lower Threshold (-{k})')
+    plt.axvline(x=k, color='red', linestyle='--', label=f'Upper Threshold (+{k})')
+    
+    # Plot customization
+    plt.title('Boxplot Based on Z-Scores with Outlier Thresholds')
+    plt.xlabel('Z-Score')
+    plt.legend(loc='upper left')
     plt.show()
+
+    return class_outliers, madn, mad, outlier_indices, above_outlier_indices, outlier_tuples
+
+
+
+
+
 
 
