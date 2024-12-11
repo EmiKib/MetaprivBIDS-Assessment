@@ -33,12 +33,12 @@ def stats(suda, pif, suda_att, k_combined_field):
     print(f"Spearman Rank Correlation between suda & pif: {correlation_spearman:.2f}, P-value: {p_value:.4f}")
     
     # Kendall's Tau Correlation
-    tau, p_value = kendalltau(suda['dis-score'], pif['RIG'])
-    print(f"Kendall's Tau between suda & pif: {tau:.2f}, p-value: {p_value:.4f}")
+    tau, p_value_t = kendalltau(suda['dis-score'], pif['RIG'])
+    print(f"Kendall's Tau between suda & pif: {tau:.2f}, p-value: {p_value_t:.4f}")
     
     # Pearson Correlation
     correlation_pearson = suda['dis-score'].corr(pif['RIG'])
-    print(f"Pearson Correlation between suda & pif: {correlation_pearson:.2f}")
+    print(f"Pearson Correlation between suda & pif: {correlation_pearson:.4f}")
     
     # Field relationship
     sum_df = pif.drop(columns=['RIG']).sum()
